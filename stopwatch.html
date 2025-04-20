@@ -52,7 +52,58 @@
             text-align: center;
             color: white;
         }
-    </style>
+    </style><style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+        background: linear-gradient(to right, #1f1c2c, #928dab); /* new gradient */
+        color: #f0f0f0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .stopwatch {
+        font-size: 2em;
+        margin-bottom: 20px;
+        background: rgba(240, 240, 240, 0.1); /* lighter overlay for contrast */
+        padding: 15px;
+        border-radius: 10px;
+        color: #ffffff;
+    }
+    button {
+        margin: 5px;
+        padding: 10px 20px;
+        font-size: 1em;
+        border: none;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.2);
+        color: #ffffff;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    button:hover {
+        background: rgba(255, 255, 255, 0.4);
+    }
+    .laps {
+        margin-top: 20px;
+        list-style-type: none;
+        padding: 0;
+    }
+    .lap-item {
+        background-color: rgba(255, 255, 255, 0.1);
+        margin: 5px auto;
+        padding: 10px;
+        width: 200px;
+        border-radius: 5px;
+        font-weight: bold;
+        text-align: center;
+        color: #f0f0f0;
+    }
+</style>
+
 </head>
 <body>
     <div class="stopwatch">00:00:00</div>
